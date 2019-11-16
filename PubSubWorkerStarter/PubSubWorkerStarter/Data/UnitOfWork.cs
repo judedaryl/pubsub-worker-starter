@@ -4,7 +4,7 @@ using System.Data;
 using Dapper;
 using System.Threading.Tasks;
 
-namespace PubSubWorkerStarter.Domain
+namespace PubSubWorkerStarter.Data
 {
     internal class UnitOfWork : IUnitOfWork
     {

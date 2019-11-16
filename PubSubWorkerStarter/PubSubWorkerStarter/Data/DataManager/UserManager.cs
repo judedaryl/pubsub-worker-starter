@@ -1,8 +1,9 @@
 ﻿using Dapper;
+using PubSubWorkerStarter.Entity;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace PubSubWorkerStarter.Domain.DataManager
+namespace PubSubWorkerStarter.Data.DataManager
 {
     internal class UserManager : IUserManager
     {

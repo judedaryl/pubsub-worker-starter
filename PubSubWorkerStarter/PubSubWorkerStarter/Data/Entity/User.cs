@@ -1,4 +1,4 @@
-﻿namespace PubSubWorkerStarter
+﻿namespace PubSubWorkerStarter.Entity
 {
     public class User
     {

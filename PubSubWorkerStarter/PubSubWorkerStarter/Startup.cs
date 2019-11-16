@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using PubSubWorkerStarter.Domain.DataManager;
+using PubSubWorkerStarter.Data.DataManager;
 using PubSubWorkerStarter.Helpers;
 using PubSubWorkerStarter.Services;
 using PubSubWorkerStarter.Subscribers;
