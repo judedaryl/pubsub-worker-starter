@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PubSubWorkerStarter.Domain.DataManager;
+using PubSubWorkerStarter.Helpers;
 using PubSubWorkerStarter.Services;
 using PubSubWorkerStarter.Subscribers;
 using System;
@@ -20,6 +21,9 @@ namespace PubSubWorkerStarter
 
         public void ConfigureServices(IServiceCollection services)
         {
+            //Register services in Installers
+            services.AddServicesInAssembly(_configuration);
+
             services.AddTransient<IPubSubService, PubSubService>();
 
             /// Register the unit of work persistence
