@@ -1,6 +1,7 @@
 ﻿using Google.Cloud.PubSub.V1;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using PubSubWorkerStarter.Entity;
 using System;
 using System.IO;
 using System.Threading;
