@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.4</PackageVersion>
+    <PackageId>pubsubworker</PackageId>
+    <Title>PubSub Worker Template</Title>
+    <Authors>Jude Daryl Clarino</Authors>
+    <Description>A .NET Core project template optimized for handling GCP PubSub Events.</Description>
+    <PackageTags>dotnet-new;templates;gcp;pubsub;worker</PackageTags>
+
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="PubSubWorkerStarter\**\*" Exclude="PubSubWorkerStarter\**\bin\**;PubSubWorkerStarter\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Jude Daryl Clarino",
+    "classifications": [ ".NET Core", "GCP", "C#8", "PubSub", "Worker" ],
+    "identity": "pubsubworker",
+    "name": "PubSub Worker Template",
+    "shortName": "pubsubworker",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+  }
