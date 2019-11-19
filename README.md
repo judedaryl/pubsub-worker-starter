@@ -11,7 +11,7 @@ dotnet new -i pubsubworker
 
 Create a new project from the template
 ```sh
-dotnet net pubsubworker -n myworker -o myfolder
+dotnet new pubsubworker -n myworker -o myfolder
 ```
 
 ## Notes
@@ -20,8 +20,6 @@ Note that the credentials here are stored in the **Credentials** folder. Managem
 
 ## Credits
 This is a port of [proudmonkey's](https://github.com/proudmonkey)  [ApiBoilerPlate](https://github.com/proudmonkey/ApiBoilerPlate) that focuses on [GCP PubSub](https://cloud.google.com/pubsub/docs/overview) Subscription workers. It uses the same project structure and naming conventions so that you get a consistent development experience all the way.
-
-## Todo add links
 
 * Dapper (2.0.30)
 * Google.Cloud.PubSub.V1 (1.0.0)
