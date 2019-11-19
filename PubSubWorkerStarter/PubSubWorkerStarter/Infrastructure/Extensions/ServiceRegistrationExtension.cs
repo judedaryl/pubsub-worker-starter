@@ -4,7 +4,7 @@ using PubSubWorkerStarter.Contracts;
 using System;
 using System.Linq;
 
-namespace PubSubWorkerStarter.Helpers
+namespace PubSubWorkerStarter.Infrastructure.Extensions
 {
     public static class ServiceRegistrationExtension
     {

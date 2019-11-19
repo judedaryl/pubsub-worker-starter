@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using PubSubWorkerStarter.Entity;
+using PubSubWorkerStarter.Infrastructure.Helpers;
 using System;
 using System.IO;
 using System.Threading;
