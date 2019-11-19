@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.4</PackageVersion>
+    <PackageVersion>1.0.5</PackageVersion>
     <PackageId>pubsubworker</PackageId>
     <Title>PubSub Worker Template</Title>
     <Authors>Jude Daryl Clarino</Authors>
