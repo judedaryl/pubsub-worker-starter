@@ -1,18 +1,15 @@
 ﻿using Google.Apis.Auth.OAuth2;
 using Google.Cloud.PubSub.V1;
 using Google.Protobuf;
-using Google.Protobuf.Collections;
 using Grpc.Auth;
 using Grpc.Core;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Text;
 
-namespace PubSubWorkerStarter
+namespace PubSubWorkerStarter.Infrastructure.Helpers
 {
     /// <summary>
     /// Contains helper methods for GCP PubSub

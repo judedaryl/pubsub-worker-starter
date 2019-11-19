@@ -1,4 +1,4 @@
-﻿namespace PubSubWorkerStarter.Helpers
+﻿namespace PubSubWorkerStarter.Infrastructure.Helpers
 {
     internal class HttpContentMediaTypes
     {

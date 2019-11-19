@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PubSubWorkerStarter.Helpers
+﻿namespace PubSubWorkerStarter.Helpers
 {
-    internal class HttpClientPolicyConfigs
+    internal class HttpClientPolicyConfiguration
     {
         public int RetryCount { get; set; }
         public int RetryDelayInMs { get; set; }

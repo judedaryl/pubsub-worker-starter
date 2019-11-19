@@ -4,21 +4,22 @@ using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Polly.Extensions.Http;
 using PubSubWorkerStarter.Contracts;
-using PubSubWorkerStarter.Handlers;
+using PubSubWorkerStarter.Infrastructure.Handlers;
 using PubSubWorkerStarter.Helpers;
 using PubSubWorkerStarter.Services;
 using System;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using PubSubWorkerStarter.Infrastructure.Helpers;
 
-namespace PubSubWorkerStarter.Installers
+namespace PubSubWorkerStarter.Infrastructure.Installers
 {
     internal class RegisterApiResources : IServiceRegistration
     {
         public void RegisterAppServices(IServiceCollection services, IConfiguration config)
         {
-            var policyConfigs = new HttpClientPolicyConfigs();
+            var policyConfigs = new HttpClientPolicyConfiguration();
             config.Bind("HttpClientPolicies", policyConfigs);
 
             var timeoutPolicy = Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(policyConfigs.RetryTimeoutInSeconds));

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PubSubWorkerStarter
+namespace PubSubWorkerStarter.Infrastructure.Helpers
 {
     internal enum PubSubClientType
     {

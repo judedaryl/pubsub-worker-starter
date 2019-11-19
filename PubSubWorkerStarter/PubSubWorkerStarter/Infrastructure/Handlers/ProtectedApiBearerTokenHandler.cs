@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PubSubWorkerStarter.Handlers
+namespace PubSubWorkerStarter.Infrastructure.Handlers
 {
     public class ProtectedApiBearerTokenHandler : DelegatingHandler
     {

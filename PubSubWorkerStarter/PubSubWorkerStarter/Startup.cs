@@ -1,13 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PubSubWorkerStarter.Data.DataManager;
-using PubSubWorkerStarter.Helpers;
+using PubSubWorkerStarter.Infrastructure.Extensions;
 using PubSubWorkerStarter.Services;
 using PubSubWorkerStarter.Subscribers;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
 namespace PubSubWorkerStarter
 {
