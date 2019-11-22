@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace PubSubWorkerStarter.Contracts
 {
-    public interface IApiConnect<T> where T : class
+    public interface IApiConnect
     {
-        Task<T> GetSampleData(long id);
+        Task<T> PostDataAsync<T, T2>(string endPoint, T2 dto);
+        Task<T> GetDataAsync<T>(string endPoint);
     }
 }
