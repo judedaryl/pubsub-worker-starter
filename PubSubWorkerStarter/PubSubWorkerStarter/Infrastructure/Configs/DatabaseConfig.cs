@@ -1,6 +1,7 @@
 ﻿using PubSubWorkerStarter.Contracts;
 using System;
 using System.Data.Common;
+using System.Data.SqlClient;
 
 namespace PubSubWorkerStarter
 {
@@ -14,6 +15,11 @@ namespace PubSubWorkerStarter
         {
             if (connectionString == null) throw new ArgumentNullException($"Connection string is null");
             ConnectionFactory = () => new Npgsql.NpgsqlConnection(connectionString);
+        }
+
+        public void UseSql(string connectionString)
+        {
+            ConnectionFactory = () => new SqlConnection(connectionString);
         }
     }
 }
