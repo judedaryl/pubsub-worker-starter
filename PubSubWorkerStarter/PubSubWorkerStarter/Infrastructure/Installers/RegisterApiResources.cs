@@ -41,7 +41,7 @@ namespace PubSubWorkerStarter.Infrastructure.Installers
             //Register a Typed Instance of HttpClientFactory for a Protected Resource
             //More info see: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-3.0
 
-            services.AddHttpClient<IApiConnect<string>, SampleApiConnect>(client =>
+            services.AddHttpClient<IApiConnect, SampleApiConnect>(client =>
             {
                 client.BaseAddress = new Uri(config["ApiResourceBaseUrls:SampleApi"]);
                 client.DefaultRequestHeaders.Accept.Clear();
