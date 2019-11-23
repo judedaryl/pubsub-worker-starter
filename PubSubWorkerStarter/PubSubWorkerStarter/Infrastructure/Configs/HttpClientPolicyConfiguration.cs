@@ -1,4 +1,4 @@
-﻿namespace PubSubWorkerStarter.Helpers
+﻿namespace PubSubWorkerStarter
 {
     internal class HttpClientPolicyConfiguration
     {
