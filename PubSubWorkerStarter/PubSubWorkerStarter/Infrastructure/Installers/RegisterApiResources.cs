@@ -1,17 +1,17 @@
-﻿using IdentityModel.Client;
+﻿
+using IdentityModel.Client;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Polly.Extensions.Http;
 using PubSubWorkerStarter.Contracts;
 using PubSubWorkerStarter.Infrastructure.Handlers;
-using PubSubWorkerStarter.Helpers;
+using PubSubWorkerStarter.Infrastructure.Helpers;
 using PubSubWorkerStarter.Services;
 using System;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using PubSubWorkerStarter.Infrastructure.Helpers;
 
 namespace PubSubWorkerStarter.Infrastructure.Installers
 {
