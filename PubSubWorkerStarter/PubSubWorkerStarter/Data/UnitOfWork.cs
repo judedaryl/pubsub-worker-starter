@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using Dapper;
 using System.Threading.Tasks;
+using PubSubWorkerStarter.Contracts;
 
 namespace PubSubWorkerStarter.Data
 {
@@ -12,9 +13,10 @@ namespace PubSubWorkerStarter.Data
         private IDbConnection _connection;
         private bool _disposed;
 
-        public UnitOfWork(string connectionString)
+        public UnitOfWork(IDatabaseConfig databaseConfig)
         {
-            var _connection = new Npgsql.NpgsqlConnection(connectionString);
+            var connectionFactory = databaseConfig.GetConnectionFactory();
+            _connection = connectionFactory();
             _connection.Open();
             _transaction = _connection.BeginTransaction();
         }
@@ -51,8 +53,8 @@ namespace PubSubWorkerStarter.Data
 
         public virtual Task<T> QueryFirstOrDefaultAsync<T>(string query, object param = null)
         {
-            if (param == null) return _connection.QueryFirstOrDefault(query, transaction: _transaction);
-            return _connection.QueryFirstOrDefault(query, param, transaction: _transaction);
+            if (param == null) return _connection.QueryFirstOrDefaultAsync<T>(query, transaction: _transaction);
+            return _connection.QueryFirstOrDefaultAsync<T>(query, param, transaction: _transaction);
         }
 
         public virtual Task<int> ExecuteAsync(string query, object param)
