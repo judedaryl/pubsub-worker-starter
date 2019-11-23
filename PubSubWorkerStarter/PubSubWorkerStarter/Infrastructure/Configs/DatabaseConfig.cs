@@ -4,7 +4,7 @@ using System.Data.Common;
 
 namespace PubSubWorkerStarter
 {
-    public class DatabaseConfig : IDatabaseConfig
+    internal class DatabaseConfig : IDatabaseConfig
     {
         private Func<DbConnection> ConnectionFactory { get; set; }
 

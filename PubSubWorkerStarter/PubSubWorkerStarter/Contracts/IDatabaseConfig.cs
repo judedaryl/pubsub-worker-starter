@@ -6,5 +6,6 @@ namespace PubSubWorkerStarter.Contracts
     public interface IDatabaseConfig
     {
         Func<DbConnection> GetConnectionFactory();
+        void UseNpgsql(string connectionString);
     }
 }

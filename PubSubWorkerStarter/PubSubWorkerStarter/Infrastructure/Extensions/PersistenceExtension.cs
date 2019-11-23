@@ -7,7 +7,7 @@ namespace PubSubWorkerStarter.Infrastructure.Extensions
 {
     public static class PersistenceExtension
     {
-        public static void AddDatabase(this IServiceCollection services, Action<DatabaseConfig> builder)
+        public static void AddDatabase(this IServiceCollection services, Action<IDatabaseConfig> builder)
         {
             var dbConfig = new DatabaseConfig();
             builder(dbConfig);
