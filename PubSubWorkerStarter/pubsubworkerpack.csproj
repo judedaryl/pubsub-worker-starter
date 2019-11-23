@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.5</PackageVersion>
+    <PackageVersion>1.0.6</PackageVersion>
     <PackageId>pubsubworker</PackageId>
     <Title>PubSub Worker Template</Title>
     <Authors>Jude Daryl Clarino</Authors>
@@ -14,6 +14,7 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageReleaseNotes>Refactored External endpoint service. Added a AddDatabase(dbBuilder) extension for the IServiceCollection which injects a IUnitOfWork instance.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
