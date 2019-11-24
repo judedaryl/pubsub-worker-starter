@@ -10,7 +10,7 @@ namespace PubSubWorkerStarter.Infrastructure.Extensions
     {
         public static void AddServicesInAssembly(this IServiceCollection services, IConfiguration configuration)
         {
-            var appServices = typeof(Startup).Assembly.ExportedTypes
+            var appServices = typeof(Startup).Assembly.DefinedTypes
                             .Where(x => typeof(IServiceRegistration)
                             .IsAssignableFrom(x) && !x.IsInterface && !x.IsAbstract)
                             .Select(Activator.CreateInstance)
