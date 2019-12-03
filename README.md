@@ -11,7 +11,7 @@ dotnet new -i pubsubworker
 
 Create a new project from the template
 ```sh
-dotnet net pubsubworker -n myworker -o myfolder
+dotnet new pubsubworker -n myworker -o myfolder
 ```
 
 ## Notes
