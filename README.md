@@ -1,3 +1,7 @@
+# Deprecated
+
+This template is no longer maintained. Will be providing new templates soon for NETCore3.1 and .NET5.
+
 # PubSub Worker Starter
 A .NET Core project template optimized for handling GCP PubSub Events. So you can focus more on the implementation of your core functionally instead of wiring up PubSub. This is open source, so feel free to contribute!
 
